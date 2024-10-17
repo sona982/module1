@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<!-- Mobile -->
+    <div class="container">
+        <div id="header">
+            <div class="logo">
+               <img src="https://www.saokim.com.vn/blog/wp-content/uploads/2022/04/logo-moi-cua-starbucks.jpg.webp" alt="logo">
+               <h1>My Shop</h1>
+           </div>
+           <div class="menu">
+               <button class="hamburger" id="hamburger-btn">&#9776;</button> <!-- Nút hamburger -->
+               <nav>
+                   <ul id="menu-items" class="hidden"> <!-- Danh sách menu với lớp "hidden" để ẩn -->
+                       <li><a href="">Home</a></li>
+                       <li><a href="">About us</a></li>
+                       <li><a href="">Contact</a></li>
+                       <li>
+                           <div class="cart">
+                               <button class="cart-button">
+                                   My Cart (<span id="cart-count">0</span>)
+                               </button>
+                               <div class="cart-popup" id="cart-popup">
+                                   <h2>Your Cart</h2>
+                                   <ul id="cart-items"></ul>
+                                   <p>Total: $<span id="cart-total">0.00</span></p>
+                                   <button class="checkout-button">Checkout</button>
+                               </div>
+                           </div>
+                       </li>
+                   </ul>
+               </nav>
+           </div>   
+       </div>
+       <div class="content">
+            <div class="categories">
+                <h2>Categories</h2>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="devices" name="categories">
+                        <label for="devices">Devices</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="funitures" name="categories">
+                        <label for="funitures">Funitures</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="cloths" name="categories">
+                        <label for="cloths">Cloths</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="food&drink" name="categories">
+                        <label for="food&drink">Food & Drink</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="materials" name="categories">
+                        <label for="materials">Materials</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="computers" name="categories">
+                        <label for="computers">Computers</label>
+                    </li>
+                    <li><a href="#">Show more...</a></li>
+                </ul>
+            </div>
+            <div class="content-right">
+                <div class="search-box">
+                    <div class="search-bar">
+                        <input type="text" id="searchInput" placeholder="Enter keyword to search" required>
+                        <button type="submit" onclick="handleSearch()">🔍</button>
+                    </div>
+                    <div class="sort-order">
+                        <select name="sort-order" id="sortby">
+                            <option value="default">Sort by</option>
+                            <option value="price-asc">Price (Ascending)</option>
+                            <option value="price-desc">Price (Descending)</option>
+                            <option value="name-asc">Name (Ascending)</option>
+                            <option value="name-desc">Name (Descending)</option>
+                        </select>
+                        <select name="sort-order" id="orderby">
+                            <option value="default">Order by</option>
+                            <option value="featured">Featured</option>
+                            <option value="latest">Latest</option>
+                            <option value="popular">Popular</option>
+                        </select>
+                    </div>
+                </div>                
+            </div>
+       </div>
+       <div class="content-bottom">
+            <div class="product-list">
+                <div class="product-card">
+                    <img src="./img/images.png" alt="product-image">
+                    <h4>Product-Name</h4>
+                    <p>$129.1</p>
+                    <div class="discount">-10%</div>
+                    <button>ADD TO CART</button>
+                </div>
+                <!-- them cac san pham khac neu can  -->
+
+                <div class="product-card">
+                    <img src="./img/images.png" alt="product-image">
+                    <h4>Product-Name</h4>
+                    <p>$129.1</p>
+                    <div class="discount">-10%</div>
+                    <button>ADD TO CART</button>
+                </div>
+                <div class="product-card">
+                    <img src="./img/images.png" alt="product-image">
+                    <h4>Product-Name</h4>
+                    <p>$129.1</p>
+                    <div class="discount">-10%</div>
+                    <button>ADD TO CART</button>
+                </div>
+                <div class="product-card">
+                    <img src="./img/images.png" alt="product-image">
+                    <h4>Product-Name</h4>
+                    <p>$129.1</p>
+                    <div class="discount">-10%</div>
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
+       </div>
+    </div>
+<!-- Desktop -->
+           <div class="container2">
+                <div id="header2">
+                    <div class="logo">
+                        <img src="https://www.saokim.com.vn/blog/wp-content/uploads/2022/04/logo-moi-cua-starbucks.jpg.webp" alt="logo">
+                        <h1>My Shop</h1>
+                    </div>
+                    <div class="menu">
+                        <nav>
+                            <ul>
+                                <li><a href="">Home</a></li>
+                                <li><a href="">About us</a></li>
+                                <li><a href="">Contact</a></li>
+                                <li><div class="cart">
+                                    <button class="cart-button">
+                                    My Cart (<span id="cart-count">0</span>)
+                                    </button>
+                                    <div class="cart-popup" id="cart-popup">
+                                    <h2>Your Cart</h2>
+                                    <ul id="cart-items"></ul>
+                                    <p>Total: $<span id="cart-total">0.00</span></p>
+                                    <button class="checkout-button">Checkout</button>
+                                    </div>
+                                </div></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+           </div>
+    <script src="./js/mobile.js"></script>
+</body>
+</html>
