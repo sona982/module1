@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Mobile -->
+     <div class="container">
+        <div id="header">
+            <div class="logo">
+                <img src="./img/logo.png" alt="logo">
+                <h1>My Shop</h1>
+            </div>
+            <div class="menu">
+                <button class="hamburger" id="hamburger-btn">&#9776;</button> <!-- Nút hamburger -->
+                <nav>
+                    <ul id="menu-items" class="hidden"> <!-- Danh sách menu với lớp "hidden" để ẩn -->
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li>
+                            <div class="cart">
+                                <button class="cart-button">
+                                    My Cart (<span id="cart-count">0</span>)
+                                </button>
+                                <div class="cart-popup" id="cart-popup">
+                                    <h2>Your Cart</h2>
+                                    <ul id="cart-items"></ul>
+                                    <p>Total: $<span id="cart-total">0.00</span></p>
+                                    <button class="checkout-button">Checkout</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>   
+        </div>
+        <div class="conntent">
+            <div class="product-images">
+                <div class="main-img">
+                    <img src="./img/images.png" alt="product-image">
+                </div>
+                <div class="extra-img">
+                    <div class="product-image">
+                        <img src="./img/images.png" alt="product-image">
+                    </div>
+                    <div class="product-image">
+                        <img src="./img/images.png" alt="product-image">
+                    </div>
+                    <div class="product-image">
+                        <img src="./img/images.png" alt="product-image">
+                    </div>
+                    <div class="product-image">
+                        <img src="./img/images.png" alt="product-image">
+                    </div>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="product-name">
+                    <h1>Lorem ipsum dolor</h1>
+                </div>
+                <div class="product-note">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. 
+                    </p>
+                </div>
+                <div class="product-order">
+                    <div class="product-options">
+                        <div class="option">
+                          <label>Color</label>
+                          <div class="buttons">
+                            <button class="color blue">Blue</button>
+                            <button class="color red">Red</button>
+                            <button class="color green">Green</button>
+                          </div>
+                        </div>
+                        
+                        <div class="option">
+                          <label>Design</label>
+                          <div class="buttons">
+                            <button class="design classic">Classic</button>
+                            <button class="design modern">Modern</button>
+                          </div>
+                        </div>
+                      
+                        <div class="option">
+                          <label>Price</label>
+                          <span class="price">$129.01</span>
+                        </div>
+                        
+                        <div class="option">
+                          <label>Discount</label>
+                          <span class="discount">10%</span>
+                        </div>
+                      
+                        <div class="option">
+                          <label>Rating</label>
+                          <span class="rating">★★★★☆</span>
+                        </div>
+                        
+                        <div class="option">
+                          <label>In Stocks</label>
+                          <span class="stock">1004</span>
+                        </div>
+                        
+                        <div class="add-to-cart">
+                          <input type="number" min="0" value="0">
+                          <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                      </div>                      
+                </div>
+            </div>
+            <div class="comments-section">
+                <h3>Comments</h3>
+            
+                <div class="comment-box">
+                    <div class="comment-header">
+                        <div class="user-info">
+                            <img src="./img/logo.png" alt="user-avatar" class="user-avatar">
+                            <div>
+                                <strong>Customer 1</strong><br>
+                                <span class="user-location">Ha Noi</span><br>
+                                <span class="comment-time">2022-10-10 19:40:01</span>
+                            </div>
+                        </div>
+                        <div class="user-rating">
+                            ★★★★☆
+                        </div>
+                    </div>
+                    <div class="comment-content">
+                        <p>sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+                    </div>
+                </div>
+            
+                <div class="comment-box">
+                    <div class="comment-header">
+                        <div class="user-info">
+                            <img src="./img/logo.png" alt="user-avatar" class="user-avatar">
+                            <div>
+                                <strong>Customer 1</strong><br>
+                                <span class="user-location">Ha Noi</span><br>
+                                <span class="comment-time">2022-10-10 19:40:01</span>
+                            </div>
+                        </div>
+                        <div class="user-rating">
+                            ★★★★☆
+                        </div>
+                    </div>
+                    <div class="comment-content">
+                        <p>sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+                    </div>
+                </div>
+                <!-- chuyen trang -->
+                <div class="pagination">
+                    <a href="#" class="prev" onclick="changePage(-1)">«</a>
+                    <a href="#" class="page-num" onclick="changePage(1)">1</a>
+                    <a href="#" class="page-num" onclick="changePage(2)">2</a>
+                    <a href="#" class="page-num" onclick="changePage(3)">3</a>
+                    <!-- them trang neu muon -->
+                    <a href="#" class="next" onclick="changePage(1)">»</a>
+                </div>    
+            </div>
+            
+        </div>
+        <div id="footer">
+            <h3>My Shop</h3>
+            <div class="info">
+                <div class="address">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <p>22C Somewhere, Ha Noi</p>
+                </div>
+                <div class="phone">
+                    <i class="fa fa-phone-square" aria-hidden="true"></i>
+                    <a href="tel:+849876543210">09876543219</a>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!-- Desktop -->
+     <div class="container2">
+        <div id="header2">
+            <div class="logo">
+                <img src="./img/logo.png" alt="logo">
+                <h1>My Shop</h1>
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><div class="cart">
+                            <button class="cart-button">
+                                My Cart(<span id="cart-button">0</span>)
+                            </button>
+                            <div class="cart-popup" id="cart-popup">
+                                <h2>Your Cart</h2>
+                                <ul id="cart-items"></ul>
+                                <p>Total: $<span id="cart-total">0.00</span></p>
+                                <button class="Checkout-button">Checkout</button>
+                            </div>
+                        </div></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="content2">
+            <div class="product-images">
+                <div class="main-img">
+                    <img src="./img/images.png" alt="product-image">
+                </div>
+                <div class="extra-img">
+                    <div class="product-image">
+                        <img src="./img/images.png" alt="product-image">
+                    </div>
+                    <div class="product-image">
+                        <img src="./img/images.png" alt="product-image">
+                    </div>
+                    <div class="product-image">
+                        <img src="./img/images.png" alt="product-image">
+                    </div>
+                    <div class="product-image">
+                        <img src="./img/images.png" alt="product-image">
+                    </div>
+                    <div class="product-image">
+                        <img src="./img/images.png" alt="product-image">
+                    </div>
+                    <div class="product-image">
+                        <img src="./img/images.png" alt="product-image">
+                    </div>
+                    <div class="product-image">
+                        <img src="./img/images.png" alt="product-image">
+                    </div>
+                    <div class="product-image">
+                        <img src="./img/images.png" alt="product-image">
+                    </div>
+                </div>
+            </div>
+            <div class="product-info">
+                <div class="product-name">
+                    <h1>Lorem ipsum dolor</h1>
+                </div>
+                <div class="product-note">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. 
+                    </p>
+                </div>
+                
+                    
+                        <div class="option">
+                          <label>Color</label>
+                          <div class="buttons">
+                            <button class="color blue">Blue</button>
+                            <button class="color red">Red</button>
+                            <button class="color green">Green</button>
+                          </div>
+                        </div>
+                        
+                        <div class="option">
+                          <label>Design</label>
+                          <div class="buttons">
+                            <button class="design classic">Classic</button>
+                            <button class="design modern">Modern</button>
+                          </div>
+                        </div>
+                      
+                        <div class="option">
+                          <label>Price</label>
+                          <span class="price">$129.01</span>
+                        </div>
+                        
+                        <div class="option">
+                          <label>Discount</label>
+                          <span class="discount">10%</span>
+                        </div>
+                      
+                        <div class="option">
+                          <label>Rating</label>
+                          <span class="rating">★★★★☆</span>
+                        </div>
+                        
+                        <div class="option">
+                          <label>In Stocks</label>
+                          <span class="stock">1004</span>
+                        </div>
+                        
+                        <div class="add-to-cart">
+                          <input type="number" min="0" value="0">
+                          <button class="add-cart-btn">Add to Cart</button>
+                        </div>
+                                            
+                
+            </div>
+            <div class="comments-section">
+                <h3>Comments</h3>
+            
+                <div class="comment-box">
+                    <div class="comment-header">
+                        <div class="user-info">
+                            <img src="./img/logo.png" alt="user-avatar" class="user-avatar">
+                            <div>
+                                <strong>Customer 1</strong><br>
+                                <span class="user-location">Ha Noi</span><br>
+                                <span class="comment-time">2022-10-10 19:40:01</span>
+                            </div>
+                        </div>
+                        <div class="user-rating">
+                            ★★★★☆
+                        </div>
+                    </div>
+                    <div class="comment-content">
+                        <p>sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+                    </div>
+                </div>
+            
+                <div class="comment-box">
+                    <div class="comment-header">
+                        <div class="user-info">
+                            <img src="./img/logo.png" alt="user-avatar" class="user-avatar">
+                            <div>
+                                <strong>Customer 1</strong><br>
+                                <span class="user-location">Ha Noi</span><br>
+                                <span class="comment-time">2022-10-10 19:40:01</span>
+                            </div>
+                        </div>
+                        <div class="user-rating">
+                            ★★★★☆
+                        </div>
+                    </div>
+                    <div class="comment-content">
+                        <p>sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+                    </div>
+                </div>
+                <!-- chuyen trang -->
+                <div class="pagination">
+                    <a href="#" class="prev" onclick="changePage(-1)">«</a>
+                    <a href="#" class="page-num" onclick="changePage(1)">1</a>
+                    <a href="#" class="page-num" onclick="changePage(2)">2</a>
+                    <a href="#" class="page-num" onclick="changePage(3)">3</a>
+                    <!-- them trang neu muon -->
+                    <a href="#" class="next" onclick="changePage(1)">»</a>
+                </div>    
+            </div>
+        </div>
+        <div id="footer">
+            <h3>My Shop</h3>
+            <div class="info">
+                <div class="address">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <p>22C Somewhere, Ha Noi</p>
+                </div>
+                <div class="phone">
+                    <i class="fa fa-phone-square" aria-hidden="true"></i>
+                    <a href="tel:+849876543210">09876543219</a>
+                </div>
+            </div>
+        </div>
+     </div>
+     <script src="./js/mobile.js"></script>
+</body>
+</html>

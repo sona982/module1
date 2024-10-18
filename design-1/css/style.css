@@ -150,6 +150,34 @@ body{
     .product-card button:hover {
         background-color: #0056b3;
     }
+    .pagination {
+        display: inline-block;
+      }
+      
+      .pagination a {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        border: 1px solid #ddd;
+        margin: 0 4px;
+      }
+      
+      .pagination a.active {
+        background-color: #4CAF50;
+        color: white;
+        border: 1px solid #4CAF50;
+      }
+      
+      .pagination a:hover:not(.active) {
+        background-color: #ddd;
+      }
+      
+      .pagination a.prev, .pagination a.next {
+        font-weight: bold;
+      }
+      
     .footer{
         width: 100%;
         background-color: bisque    ;
@@ -268,7 +296,7 @@ body{
     }
     .search-bar input{
         width: 100%;
-        max-width: 430px;
+        max-width: 350px;
         box-sizing: border-box;
     }
     .sort-order{
@@ -330,6 +358,35 @@ body{
     .product-card button:hover {
         background-color: #0056b3;
     }
+    .pagination {
+        display: inline-block;
+      }
+      
+      .pagination a {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+        border: 1px solid #ddd;
+        margin: 0 4px;
+      }
+      
+      .pagination a.active {
+        background-color: #4CAF50;
+        color: white;
+        border: 1px solid #4CAF50;
+      }
+      
+      .pagination a:hover:not(.active) {
+        background-color: #ddd;
+      }
+      
+      .pagination a.prev, .pagination a.next {
+        font-weight: bold;
+      }
+      
+
     .footer{
         margin-top: 20px;
         width: 100%;
