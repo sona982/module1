@@ -38,7 +38,7 @@ body{
     position: relative;
    }
    #menu-items {
-    position: absolute; /* Đặt menu ở vị trí tuyệt đối */
+    position: absolute; 
     left: 0;
     padding: 0;
     z-index: 1000;
@@ -54,9 +54,7 @@ body{
         border: 2px solid black;
         padding: 5px;
     }
-    .categories ul{
-
-    }
+    
     .categories ul li{
         list-style-type: none;
         margin-top: 5px;
@@ -96,7 +94,7 @@ body{
     .product-list {
         display: grid;
         grid-template-columns: repeat(2,200px);
-        gap: 20px; /* Khoảng cách giữa các thẻ sản phẩm */
+        gap: 20px; 
         padding: 10px;
     }
     .content{
@@ -152,8 +150,39 @@ body{
     .product-card button:hover {
         background-color: #0056b3;
     }
-    
-    
+    .footer{
+        width: 100%;
+        background-color: bisque    ;
+    }
+    .footer h3{
+        padding-left: 10px;
+    }
+    .info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 10px;
+        align-items: center;
+    }
+    .address{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+    .address i{
+        position: relative;
+        top: 15px;
+    }
+    .address p{
+        color: #333;
+        font-weight: bolder;
+    }
+    .phone a{
+        text-decoration: none;
+        color: #333;
+        font-weight: bolder;
+    }
+}
 
 @media only screen and (min-width: 574px){
     .container2{
@@ -197,5 +226,141 @@ body{
     #cart-popup{
         display: none;
     }   
+    .content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 2fr    ;
+        gap: 20px;
+    }
+    .categories{      
+        padding: 5px;
+    }
+    .categories-inside{
+        border: 2px solid black;
+        padding: 5px;
+    }
+    .categories ul li{
+        list-style-type: none;
+        margin-top: 5px;
+    } 
+    .categories ul li a{
+        border: 1px solid black;
+        background-color: rgb(141, 212, 236);
+        text-decoration: none;
+        color: #333;
+        font-weight: bolder;
+        border-radius: 10px;
+        padding: 5px;
+        position: relative;
+        top: 5px;
+    }
+    .content-right{
+        display: grid;
+        grid-template-rows: 50px ;
+        row-gap: 10px;
+    }
+    .search-box{
+        padding: 10px;
+        border: 2px solid black;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 2.5fr 1fr;
+    }
+    .search-bar input{
+        width: 100%;
+        max-width: 430px;
+        box-sizing: border-box;
+    }
+    .sort-order{
+        display: flex;
+        flex-direction: row;
+    }
+    .product-list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .product-card {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 10px;
+        text-align: center;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
     
+    .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    
+    .product-card img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+    
+    .product-card h4 {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+    
+    .product-card p {
+        font-size: 16px;
+        color: #007BFF;
+        margin: 5px 0;
+    }
+    
+    .product-card .discount {
+        font-size: 14px;
+        color: #FF0000;
+        margin-bottom: 10px;
+    }
+    
+    .product-card button {
+        padding: 8px 12px;
+        border: none;
+        background-color: #007BFF;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .product-card button:hover {
+        background-color: #0056b3;
+    }
+    .footer{
+        margin-top: 20px;
+        width: 100%;
+        background-color: bisque    ;
+    }
+    .footer h3{
+        padding-left: 10px;
+    }
+    .info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 10px;
+        align-items: center;
+    }
+    .address{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+    .address i{
+        position: relative;
+        top: 15px;
+    }
+    .address p{
+        color: #333;
+        font-weight: bolder;
+    }
+    .phone a{
+        text-decoration: none;
+        color: #333;
+        font-weight: bolder;
+    }
 }
