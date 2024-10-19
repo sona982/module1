@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Mobile -->
+    <div class="container">
+        <div id="header">
+            <div class="logo">
+                <img src="./img/logo.png" alt="logo">
+                <h1>My Shop</h1>
+            </div>
+            <div class="menu">
+                <button class="hamburger" id="hamburger-btn">&#9776;</button> <!-- Nút hamburger -->
+                <nav>
+                    <ul id="menu-items" class="hidden"> <!-- Danh sách menu với lớp "hidden" để ẩn -->
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li>
+                            <div class="cart">
+                                <button class="cart-button">
+                                    My Cart (<span id="cart-count">0</span>)
+                                </button>
+                                <div class="cart-popup" id="cart-popup">
+                                    <h2>Your Cart</h2>
+                                    <ul id="cart-items"></ul>
+                                    <p>Total: $<span id="cart-total">0.00</span></p>
+                                    <button class="checkout-button">Checkout</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>   
+        </div>
+        <div class="content">
+            <div class="user-info">
+                <h3>Your information</h3>
+                <div class="info-content">
+                    <div class="form-groups">
+                        <div class="form-row">
+                            <label for="fullname">Full Name<span>*</span></label>
+                            <input type="text" id="fullname" placeholder="Enter your full name">
+                        </div>
+                        <div class="form-row">
+                            <label for="phone">Phone number<span>*</span></label>
+                            <input type="text" id="phone" placeholder="Enter your phone number">
+                        </div>
+                        <div class="form-row">
+                            <label for="address">Address<span>*</span></label>
+                            <input type="text" id="address" placeholder="Enter your address">
+                        </div>
+                    </div>
+                    <div class="payment-method">
+                        <h4>Payment method<span>*</span></h4>
+                        <div class="form-row">
+                            <input type="radio" id="credit-card" name="payment" value="Credit card">
+                            <label for="credit-card">Credit card</label>
+                        </div>
+                        <div class="form-row">
+                            <input type="radio" id="bank" name="payment" value="Your bank">
+                            <label for="bank">Your bank</label>
+                        </div>
+                        <div class="form-row">
+                            <input type="radio" id="momo" name="payment" value="Momo">
+                            <label for="momo">Momo</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart">
+                <h3>Cart</h3>
+                <div class="cart-info">
+                    <div class="cart-left">
+                        <input type="checkbox" checked>
+                        <div class="product-img">IMAGE</div>
+                        <div class="info-check">
+                            <h3>Lorem ipsum dolor</h3>
+                            <div class="product-option">
+                                <button class="option">Blue</button>
+                                <button class="option">Classic</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-right">
+                        <div class="quantity-remove">
+                            <input type="number" value="2" min="1">
+                            <button class="remove-btn">Remove</button>
+                        </div>
+                        <p>Total: $210</p>
+                    </div>
+                </div>
+                
+                <div class="cart-info">
+                    <div class="cart-left">
+                        <input type="checkbox" checked>
+                        <div class="product-img">IMAGE</div>
+                        <div class="info-check">
+                            <h3>Lorem ipsum dolor</h3>
+                            <div class="product-option">
+                                <button class="option">Blue</button>
+                                <button class="option">Classic</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-right">
+                        <div class="quantity-remove">
+                            <input type="number" value="2" min="1">
+                            <button class="remove-btn">Remove</button>
+                        </div>
+                        <p>Total: $210</p>
+                    </div>
+                </div>
+                <div class="cart-info">
+                    <div class="cart-left">
+                        <input type="checkbox" checked>
+                        <div class="product-img">IMAGE</div>
+                        <div class="info-check">
+                            <h3>Lorem ipsum dolor</h3>
+                            <div class="product-option">
+                                <button class="option">Blue</button>
+                                <button class="option">Classic</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-right">
+                        <div class="quantity-remove">
+                            <input type="number" value="2" min="1">
+                            <button class="remove-btn">Remove</button>
+                        </div>
+                        <p>Total: $210</p>
+                    </div>
+                </div>
+                <div class="cart-info">
+                    <div class="cart-left">
+                        <input type="checkbox" checked>
+                        <div class="product-img">IMAGE</div>
+                        <div class="info-check">
+                            <h3>Lorem ipsum dolor</h3>
+                            <div class="product-option">
+                                <button class="option">Blue</button>
+                                <button class="option">Classic</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-right">
+                        <div class="quantity-remove">
+                            <input type="number" value="2" min="1">
+                            <button class="remove-btn">Remove</button>
+                        </div>
+                        <p>Total: $210</p>
+                    </div>
+                </div>
+                <!-- them cart neu muon -->
+                <button class="submit-order">Submit Order</button>
+            </div>
+        </div>
+        <div id="footer">
+            <h3>My Shop</h3>
+            <div class="info">
+                <div class="address">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <p>22C Somewhere, Ha Noi</p>
+                </div>
+                <div class="phone">
+                    <i class="fa fa-phone-square" aria-hidden="true"></i>
+                    <a href="tel:+849876543210">09876543219</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- Desktop -->
+    <div class="container2">
+        <div id="header2">
+            <div class="logo">
+                <img src="./img/logo.png" alt="logo">
+                <h1>My Shop</h1>
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><div class="cart">
+                            <button class="cart-button">
+                                My Cart(<span id="cart-button">0</span>)
+                            </button>
+                            <div class="cart-popup" id="cart-popup">
+                                <h2>Your Cart</h2>
+                                <ul id="cart-items"></ul>
+                                <p>Total: $<span id="cart-total">0.00</span></p>
+                                <button class="Checkout-button">Checkout</button>
+                            </div>
+                        </div></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="content2">
+            <div class="user-info">
+                <h3>Your information</h3>
+                <div class="info-content">
+                    <div class="form-groups">
+                        <div class="form">
+                            <label for="fullname">Full Name<span>*</span></label>
+                            <input type="text" id="fullname" placeholder="Enter your full name">
+                        </div>
+                        <div class="form">
+                            <label for="phone">Phone number<span>*</span></label>
+                            <input type="text" id="phone" placeholder="Enter your phone number">
+                        </div>
+                        <div class="form">
+                            <label for="address">Address<span>*</span></label>
+                            <input type="text" id="address" placeholder="Enter your address">
+                        </div>
+                    </div>
+                    <div class="payment-method">
+                        <h4>Payment method<span>*</span></h4>
+                        <div class="form-row">
+                            <input type="radio" id="credit-card" name="payment" value="Credit card">
+                            <label for="credit-card">Credit card</label>
+                        </div>
+                        <div class="form-row">
+                            <input type="radio" id="bank" name="payment" value="Your bank">
+                            <label for="bank">Your bank</label>
+                        </div>
+                        <div class="form-row">
+                            <input type="radio" id="momo" name="payment" value="Momo">
+                            <label for="momo">Momo</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart">
+                <h3>Cart</h3>
+                <div class="cart-info">
+                    <div class="cart-left">
+                        <input type="checkbox" checked>
+                        <div class="product-img">IMAGE</div>
+                        <div class="info-check">
+                            <h3>Lorem ipsum dolor</h3>
+                            <div class="product-option">
+                                <button class="option">Blue</button>
+                                <button class="option">Classic</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-right">
+                        <div class="quantity-remove">
+                            <input type="number" value="2" min="1">
+                            <button class="remove-btn">Remove</button>
+                        </div>
+                        <p>Total: $210</p>
+                    </div>
+                </div>
+                
+                <div class="cart-info">
+                    <div class="cart-left">
+                        <input type="checkbox" checked>
+                        <div class="product-img">IMAGE</div>
+                        <div class="info-check">
+                            <h3>Lorem ipsum dolor</h3>
+                            <div class="product-option">
+                                <button class="option">Blue</button>
+                                <button class="option">Classic</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-right">
+                        <div class="quantity-remove">
+                            <input type="number" value="2" min="1">
+                            <button class="remove-btn">Remove</button>
+                        </div>
+                        <p>Total: $210</p>
+                    </div>
+                </div>
+                <div class="cart-info">
+                    <div class="cart-left">
+                        <input type="checkbox" checked>
+                        <div class="product-img">IMAGE</div>
+                        <div class="info-check">
+                            <h3>Lorem ipsum dolor</h3>
+                            <div class="product-option">
+                                <button class="option">Blue</button>
+                                <button class="option">Classic</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-right">
+                        <div class="quantity-remove">
+                            <input type="number" value="2" min="1">
+                            <button class="remove-btn">Remove</button>
+                        </div>
+                        <p>Total: $210</p>
+                    </div>
+                </div>
+                <div class="cart-info">
+                    <div class="cart-left">
+                        <input type="checkbox" checked>
+                        <div class="product-img">IMAGE</div>
+                        <div class="info-check">
+                            <h3>Lorem ipsum dolor</h3>
+                            <div class="product-option">
+                                <button class="option">Blue</button>
+                                <button class="option">Classic</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-right">
+                        <div class="quantity-remove">
+                            <input type="number" value="2" min="1">
+                            <button class="remove-btn">Remove</button>
+                        </div>
+                        <p>Total: $210</p>
+                    </div>
+                </div>
+                <!-- them cart neu muon -->
+                <button class="submit-order">Submit Order</button>
+            </div>
+        </div>
+        <div id="footer">
+            <h3>My Shop</h3>
+            <div class="info">
+                <div class="address">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <p>22C Somewhere, Ha Noi</p>
+                </div>
+                <div class="phone">
+                    <i class="fa fa-phone-square" aria-hidden="true"></i>
+                    <a href="tel:+849876543210">09876543219</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/mobile.js"></script>
+</body>
+</html>
